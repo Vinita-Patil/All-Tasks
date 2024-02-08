@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+    ;
+}
+
+.navigator {
+    display: grid;
+    grid-template-columns: 450px 400px 250px;
+    color: white;
+    background-image: url('blog-hero.jpg');
+    filter: drop-shadow(50px black);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    position: relative;
+}
+
+
+.heading {
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+
+.heading1 {
+    font-size: 80px;
+    color: grey;
+    position: absolute;
+    right: 5%;
+}
+
+.overview {
+    display: grid;
+    grid-template-columns: 150px 250px 150px 250px 150px 250px;
+    background-color: #111517;
+    padding: 8%;
+    color: white;
+}
+
+.service1,
+.service3 {
+    display: grid;
+    grid-template-columns: 350px 900px;
+    background-color: #111517;
+    padding: 8%;
+    color: white;
+}
+
+.service2,
+.service4 {
+    display: grid;
+    grid-template-columns: 900px 350px;
+    background-color: #111517;
+    padding: 8%;
+    color: white;
+}
+
+#gallery {
+    background-color: #111517;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    padding-bottom: 150px;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #111517;
+    color: white;
+    padding: 5%;
+    gap: 5px;
+}
+
+@media (max-width: 991px) {
+    html {
+        flex-direction: column;
+        display: flex;
+    }
+}
