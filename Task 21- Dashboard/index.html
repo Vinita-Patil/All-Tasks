@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="icon" onclick="openSidebar()">
+                <span class="material-icons-outlined">menu</span>
+            </div>
+            <div class="header-left">
+                <span class="material-icons-outlined">search</span>
+            </div>
+            <div class="header-right">
+                <span class="material-icons-outlined">notifications</span>
+                <span class="material-icons-outlined">email</span>
+                <span class="material-icons-outlined">account_circle</span>
+            </div>
+        </header>
+
+        <!--Sidebar-->
+        <aside id="sidebar">
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                    <h2>Numetry Classes</h2>
+                </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        <span class="nav-item">Home</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-user"></i>
+                        <span class="nav-item">Profile</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-book"></i>
+                        <span class="nav-item">Courses</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="form/form.html">
+                        <i class="fas fa-pen"></i>
+                        <span class="nav-item">Form</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-tasks"></i>
+                        <span class="nav-item">Tasks</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span class="nav-item">Settings</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-question-circle"></i>
+                        <span class="nav-item">Help</span>
+                    </a>
+                </li>
+                <li class="sidebar-list-item">
+                    <a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span class="nav-item">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+
+        <main class="main-container">
+            <div class="main-title">
+                <h1>DASHBOARD</h1>
+            </div>
+            <div class="main-cards">
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary font-weight-bold">Web Development</p>
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Join Over 1 million Students.</h3>
+                    <button>Get Started</button>
+                </div>
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary font-weight-bold">Graphic Design</p>
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Joined Over 2 million Students.</h3>
+                    <button>Get Started</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary font-weight-bold">Front-end Developer</p>
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Joined Over 5 million Students.</h3>
+                    <button>Get Started</button>
+                </div>
+
+                <div class="card">
+                    <div class="card-inner">
+                        <p class="text-primary font-weight-bold">Back-end Developer</p>
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Joined Over 3 million Students.</h3>
+                    <button>Get Started</button>
+                </div>
+            </div><br><br>
+
+            <section class="main-course">
+                <h1>My courses</h1>
+                <div class="course-box">
+                    <ul>
+                        <li class="active">Selected Courses</li>
+                        <li>incoming Courses</li>
+                        <li>finished Courses</li>
+                    </ul>
+                    <div class="course">
+                        <div class="box">
+                            <h3>HTML</h3>
+                            <p>80% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-html5 html"></i>
+                        </div>
+                        <div class="box">
+                            <h3>CSS</h3>
+                            <p>40% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-css3-alt css"></i>
+                        </div>
+                        <div class="box">
+                            <h3>JavaScript</h3>
+                            <p>30% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-js" style="background-color: yellow;"></i>
+                        </div>
+                    </div><br><br>
+                    <div class="course">
+                        <div class="box">
+                            <h3>Java</h3>
+                            <p>20% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="box">
+                            <h3>Python</h3>
+                            <p>50% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-python" style="color: navy;"></i>
+                        </div>
+                        <div class="box">
+                            <h3>React</h3>
+                            <p>70% Completed</p>
+                            <button>continue</button>
+                            <i class="fab fa-react" style="color: rgb(13, 133, 180);"></i>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.3/apexcharts.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
