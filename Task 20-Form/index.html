@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Smart School</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="top">
+         <div class="header">
+            <div>
+                <h3 class="school_name" style="color: green;">SMART SCHOOL</h3>
+            </div>
+
+            <div>
+                <button class="btn btn-danger btn-sm rounded-pill" style="background-color: rgb(244, 114, 49);">Under Implementation Track Progress</button>
+            </div>
+
+            <div>
+                <button class="btn btn-sm rounded-pill btn-primary" style="background-color: blue;">Get Help</button>
+            </div>
+
+            <div>
+                <p>AY: 2023-2024</p>
+            </div>
+
+            <div>
+                <img src="home.png" alt="home" height="20">
+                <img src="bell.png" alt="bell" height="20">
+                <img src="search.png" alt="search" height="20">
+                <img src="sq.png" alt="box" height="20">
+                <img src="con.jpg" alt="contact" height="20">
+            </div>
+         </div>
+
+            <div class="header2">
+                <div>
+                    <a class="nav-link" href="#">Staff Details</a>
+                </div>
+
+                <div>
+                    <a class="nav-link" href="#">Staff Attendance</a>
+                </div>
+                      
+                <div>
+                    <a class="nav-link" href="#">Biometric Attendance</a>
+                </div>
+                      
+                <div>
+                    <a class="nav-link" href="#">Feedback</a>
+                </div>
+                      
+                <div>
+                    <a class="nav-link" href="#">Staff Leaves</a>
+                </div>
+                        
+                <div>
+                    <a class="nav-link" href="#">Staff</a>
+                </div>
+                        
+                <div>
+                    <a class="nav-link" href="#">Report</a>
+                </div>
+            </div>
+    </section>
+    <br>
+    <hr>
+
+    <section class="forms">
+        <h5 class="text-center">BRANCH: SHAHEEN JUNIOR COLLEGE</h5><br>
+        <div class="form-container">
+            <h5 class="headings p-2">Staff Details</h5><br>
+            <form action="">
+            <div class="details">
+                    <div class="fields">
+                        <label for="emp-status" class="f1">Employment Status:</label><br>
+                        <select class="form-select">
+                            <option value="temporary" selected>Temporary</option>
+                            <option value="permanent">Permanent</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="staff-type" class="f1">Staff Type:</label><br>
+                        <input type="radio" id="teaching" value="Teaching" checked><label for="teaching">Teaching</label>
+                        <input type="radio" id="non-teaching" value="non-teaching"><label for="non-teaching">Non Teaching</label>
+                        <input type="radio" id="transport" value="transport"><label for="transport">Transport</label>
+                    </div>
+
+                    <div class="fields">
+                        <label for="emp-dept" class="f1">Staff Department:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Department-</option>
+                            <option value="cse">CSE</option>
+                            <option value="mech">Mech</option>
+                            <option value="civil">Civil</option>
+                            <option value="e&tc">E&TC</option>
+                            <option value="ele">Electrical</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="emp-cat" class="f1">Employment Category:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Category-</option>
+                            <option value="1"> 1</option>
+                            <option value="2"> 2</option>
+                            <option value="3"> 3</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="designation" class="f1">Designation:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Department-</option>
+                            <option value="dep1">Dep1</option>
+                            <option value="dep2">Dep2</option>
+                            <option value="des3">Dep3</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="qual-type" class="f1">Qualification Type:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Qualification-</option>
+                            <option value="qual3">Principal</option>
+                            <option value="qual1">Teacher</option>
+                            <option value="qual2">School Peon</option>
+                        </select>
+                    </div>
+
+
+                    <div class="fields">
+                        <label for="edu-qual" class="f1">Education Qualification:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Qualification-</option>
+                            <option value="Qual1">Qualification 1</option>
+                            <option value="Qual2">Qualification 2</option>
+                            <option value="Qual3">Qualification 3</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="access-level" class="f1">Access Level:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Access Level-</option>
+                            <option value="lev1">Level 1</option>
+                            <option value="lev2">Level 2</option>
+                            <option value="lev3">level 3</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="trained-as" class="f1">Trained As:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="select" selected>-Select Level-</option>
+                            <option value="lev1">Level 1</option>
+                            <option value="lev2">Level 2</option>
+                            <option value="lev3">level 3</option>
+                        </select>
+                    </div>
+
+                    <div class="fields">
+                        <label for="ctet" class="f1">CTET Qualified:</label><br>
+                        <input type="radio" id="ctet-yes" value="yes" checked><label for="ctet-yes">Yes</label>
+                        <input type="radio" id="ctet-no" value="no"><label for="ctet-no">No</label>
+                    </div>
+                </div>
+            </form><br><br>
+
+                <h5 class="headings p-2">Personal Details</h5>
+                <form action="">
+                <div class="details">
+                    <div class="fields">
+                        <label for="fname" class="f1">First Name:<sup>*</sup></label><br>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="mname" class="f1">Middle Name:<sup>*</sup></label><br>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="lname" class="f1">Last Name:<sup>*</sup></label><br>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="phone" class="f1">Mobile No<sup>*</sup></label><br>
+                        <input type="text" maxlength="10" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="em-phone" class="f1">Emergency Contact No<sup>*</sup></label><br>
+                        <input type="text" maxlength="10" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="gender" class="f1">Gender:</label><br>
+                        <input type="radio" id="male" value="male" checked><label for="male">Male</label>
+                        <input type="radio" id="female" value="female"><label for="female">Female</label>
+                        <input type="radio" id="other" value="other"><label for="other">Other</label>
+                    </div>
+
+                    <div class="fields">
+                        <label for="dob" class="f1">Enter Date of Birth:<sup>*</sup></label><br>
+                        <input type="date" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="email" class="f1">Email Id:<sup>*</sup></label><br>
+                        <input type="email" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="per-add" class="f1">Permanent Address:<sup>*</sup></label><br>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="cor-add" class="f1">Corresponding Address:<sup>*</sup></label><br>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="fields">
+                        <label for="religion" class="f1">Religion:<sup>*</sup></label>
+                        <select class="form-select">
+                            <option value="hindu" selected>Hindu</option>
+                            <option value="religion">Religion 2</option>
+                            <option value="religion">Religion 3</option>
+                        </select>
+                    </div><br><br>
+                </div><br><br>
+
+                    <h5 class="headings p-2">Other Details</h5><br>
+                    <form action="">
+                    <div class="details">
+                        <div class="fields">
+                            <label for="adhaar_no" class="f1">Adhar No:<sup>*</sup></label><br>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="fields">
+                            <label for="pan" class="f1">PAN No:<sup>*</sup></label><br>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="fields">
+                            <label for="doj" class="f1">Date of Joining:<sup>*</sup></label><br>
+                            <input type="date" class="form-control">
+                        </div>
+
+                        <div class="fields">
+                            <label for="stc" class="f1">Staff Reference Code:<sup>*</sup></label><br>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="fields">
+                            <label for="salary" class="f1">Salary Pay Type:</label><br>
+                            <input type="radio" id="con" value="Consolidate" checked><label for="Consolidate">Consolidate</label>
+                            <input type="radio" id="pay" value="pay"><label for="pay">PAY</label>
+                            <input type="radio" id="other" value="other"><label for="other">Other</label>
+                        </div>
+
+                        <div class="fields">
+                            <label for="gov-id" class="f1">Government Id/ Resident No :<sup>*</sup></label><br>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="fields">
+                            <label for="citizen" class="f1">Citizenship:<sup>*</sup></label>
+                            <select class="form-select">
+                                <option value="Indian" selected>Indian</option>
+                                <option value="citizen2">Citizenship 2</option>
+                                <option value="citizen3">Citizenship 3</option>
+                            </select>
+                        </div>
+            </div>
+            <button class="btn" style="background-color: orangered; color: white; width: 15%;">Save & Continue</button>
+    </section>
+    </div>
+</body>
+</html>
