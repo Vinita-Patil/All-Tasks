@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+
+</head>
+
+<body>
+</body>
+<script>
+    var a = 5; //this is integer variable
+
+    var b = "Numetry" //this is string variable
+
+    var c = 54.45 //this is float variable
+
+    console.log(a);
+    console.log(b);
+    console.log(c)
+
+    var V = 5;
+    var L = 10;
+
+    // Arithmetic operators
+    console.log("The value of V + L is " + (V + L));
+    console.log("The value of V - L is " + (V - L));
+    console.log("The value of V * L is " + (V * L));
+    console.log("The value of V / L is " + (V / L));
+    console.log("The value of V ** L is " + (V ** L));
+
+    //string functions
+    var str = "This is javascript";
+    console.log(str);
+
+    var index = str.indexOf('is'); //first occurence of given string
+    console.log(index)
+
+    var index = str.lastIndexOf('is'); //last occurence
+    console.log(index)
+
+    var substr = str.slice(1, 7); //substring from a string
+    console.log(substr)
+
+    var substr1 = str.substr(1, 5); //lenght
+    console.log(substr1)
+
+    var vn = "This is vini"
+    var replaced = str.replace('javascript', 'Numetry');
+    console.log(vn)
+    console.log(replaced)
+
+    console.log(vn.toUpperCase());
+    console.log(vn.toLowerCase());
+    
+
+    //functions
+
+    function greet(name, greetText) {
+        console.log(greetText + " " + name);
+        console.log(name + " is a good boy");
+    }
+    let name = "Harry";
+    let name1 = "Shubham";
+    let name2 = "Rohan";
+    let name3 = "Sagar";
+    let greetText = "Good Morning";
+    greet(name, greetText);
+    greet(name1, greetText);
+    greet(name2, greetText);
+    greet(name3, greetText);
+
+
+    /*Control Flow:
+    JavaScript supports various control flow statements like if, else, else if, switch, for, while, and do-while.*/
+
+    let num = -1;
+
+    // If-else statement
+    if (num > 0) {
+        console.log("Positive");
+    } else if (num < 0) {
+        console.log("Negative");
+    } else {
+        console.log("Zero");
+    }
+
+    // Switch statement
+    switch (num) {
+        case 10:
+            console.log("Ten");
+            break;
+        case 20:
+            console.log("Twenty");
+            break;
+        default:
+            console.log("Other");
+    }
+
+    /*Arrays:
+    Arrays in JavaScript are used to store multiple values in a single variable.*/
+
+    // Array declaration
+    let fruits = ["Mango", "Apple", "Grapes"];
+
+    // Accessing array elements
+    console.log(fruits[1]); // 
+
+    // Adding elements
+    fruits.push("Strawberry");
+
+    // Iterating through array
+    fruits.forEach(function (fruit) {
+        console.log(fruit);
+    });
+
+    //Objects:
+    let person = {
+        name: "Sahil",
+        age: 23,
+        city: "Mumbai"
+    };
+
+    // Accessing object properties
+    console.log(person.name);
+    console.log(person["age"]);
+    console.log(person.city);
+
+
+    /* 
+    Event handling in JavaScript is a crucial aspect of building interactive web applications. It involves responding to user actions, such as clicks, mouse movements, keyboard inputs, and more. Here's an overview of event handling in JavaScript:
+    Basic Event Handling:
+    Event Registration:
+    Events are typically attached to HTML elements using event attributes (e.g., onclick, onmouseover) or by using the addEventListener() method.
+    element.addEventListener(event, function, useCapture);
+    Event Listener:
+    A function that runs when a specific event occurs. It's registered with an event target (such as an HTML element) to handle the event.
+    element.addEventListener('click', function() {
+        // Code to handle the click event
+    });
+    Event Object:
+    When an event occurs, an event object is created and passed as an argument to the event handler. It contains information about the event, such as the target element, type of event, etc.
+    element.addEventListener('click', function(event) {
+        console.log(event.target); // Accessing the element that triggered the event
+    });
+    Event Types:
+    Mouse Events:
+    click, dblclick, mouseover, mouseout, mousemove, mousedown, mouseup, etc.
+    Keyboard Events:
+    keydown, keyup, keypress
+    Form Events:
+    submit, reset, change, focus, blur
+    Document Loading Events:
+    load, DOMContentLoaded*/
+
+</script>
+
+</html>
