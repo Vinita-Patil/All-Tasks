@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("bck1.jpg");
+}
+
+.first-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: #fff;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.button{
+    font-size: 190%;
+    width: 200px;
+    height: 60px;
+    border-radius: 7%;
+    background-color: rgb(11, 75, 138);
+    padding: 10px 25px;
+    margin: 45px;
+    text-align: center;
+}
+
+a{
+    color: #fff;
+    
+}
+
+.flex-container{
+    margin-top: 90px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex-box{
+   
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(rgb(66, 247, 187),rgb(60, 0, 255));
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    line-height: 200px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 990px) {
+    body {
+        background-color: #000;
+    }
+}
